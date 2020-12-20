@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace DesignPatterns.RPG
+﻿namespace DesignPatterns.RPG
 {
     public abstract class Character
     {
         IWeaponBehaviour Weapon;
 
-        protected void SetWeapon(IWeaponBehaviour wb)
+        public void SetWeapon(IWeaponBehaviour wb)
         {
             Weapon = wb;
         }

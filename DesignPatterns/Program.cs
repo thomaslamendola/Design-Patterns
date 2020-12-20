@@ -1,5 +1,4 @@
-﻿using DesignPatterns.DuckSimulator;
-using System;
+﻿using System;
 
 namespace DesignPatterns
 {
