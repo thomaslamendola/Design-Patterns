@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns", "DesignPatterns\DesignPatterns.csproj", "{BF202B7C-8AA9-4EC6-9BA2-5008AD720E8E}"
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "_python", "PythonDesignPatterns\_python.pyproj", "{47B3C4B2-23EF-4304-8B4B-FEB0D2C1A888}"
 EndProject
-Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "PythonDesignPatterns", "PythonDesignPatterns\PythonDesignPatterns.pyproj", "{47B3C4B2-23EF-4304-8B4B-FEB0D2C1A888}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01. Strategy", "Strategy\01. Strategy.csproj", "{BFA4BB87-F52D-407D-A1EF-A14937BA8620}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Observer", "Observer\02. Observer.csproj", "{8660E798-FA92-4C7F-8B38-D5D643E0E2A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Decorator", "Decorator\03. Decorator.csproj", "{3A2844D1-55A6-440F-886D-EACE587438E7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,12 +17,20 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BF202B7C-8AA9-4EC6-9BA2-5008AD720E8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BF202B7C-8AA9-4EC6-9BA2-5008AD720E8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BF202B7C-8AA9-4EC6-9BA2-5008AD720E8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BF202B7C-8AA9-4EC6-9BA2-5008AD720E8E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{47B3C4B2-23EF-4304-8B4B-FEB0D2C1A888}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{47B3C4B2-23EF-4304-8B4B-FEB0D2C1A888}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFA4BB87-F52D-407D-A1EF-A14937BA8620}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFA4BB87-F52D-407D-A1EF-A14937BA8620}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFA4BB87-F52D-407D-A1EF-A14937BA8620}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFA4BB87-F52D-407D-A1EF-A14937BA8620}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8660E798-FA92-4C7F-8B38-D5D643E0E2A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8660E798-FA92-4C7F-8B38-D5D643E0E2A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8660E798-FA92-4C7F-8B38-D5D643E0E2A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8660E798-FA92-4C7F-8B38-D5D643E0E2A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A2844D1-55A6-440F-886D-EACE587438E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A2844D1-55A6-440F-886D-EACE587438E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A2844D1-55A6-440F-886D-EACE587438E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A2844D1-55A6-440F-886D-EACE587438E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

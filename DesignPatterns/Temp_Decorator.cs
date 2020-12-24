@@ -4,24 +4,24 @@ public class Program
 {
 	public static void Main()
 	{
-		Ingredient pizza = new PizzaBase();
+		IIngredient pizza = new PizzaBase();
 		pizza = new Tomato(pizza);
 		pizza = new Mozzarella(pizza);
 		Console.WriteLine(pizza.GetDescription());
 		Console.WriteLine(pizza.GetCost());
 	}
 	
-	public interface Ingredient
+	public interface IIngredient
 	{
 		decimal GetCost();
 		string GetDescription();
 	}
 	
-	public abstract class BaseDecorator : Ingredient
+	public abstract class BaseDecorator : IIngredient
 	{
-		Ingredient _ingredient;
+		IIngredient _ingredient;
 		
-		public BaseDecorator(Ingredient ingredient)
+		public BaseDecorator(IIngredient ingredient)
 		{
 			_ingredient = ingredient;
 		}
@@ -51,7 +51,7 @@ public class Program
 		}
 	}
 	
-	public class PizzaBase : Ingredient
+	public class PizzaBase : IIngredient
 	{
 		public decimal GetCost()
 		{
@@ -66,9 +66,9 @@ public class Program
 	
 	public class Tomato : BaseDecorator
 	{
-		Ingredient _ingredient;
+		IIngredient _ingredient;
 		
-		public Tomato(Ingredient ingredient) : base(ingredient) {}
+		public Tomato(IIngredient ingredient) : base(ingredient) {}
 		
 		public override decimal GetCost()
 		{
@@ -83,9 +83,9 @@ public class Program
 	
 	public class Mozzarella : BaseDecorator
 	{
-		Ingredient _ingredient;
+		IIngredient _ingredient;
 		
-		public Mozzarella(Ingredient ingredient) : base(ingredient) {}
+		public Mozzarella(IIngredient ingredient) : base(ingredient) {}
 		
 		public override decimal GetCost()
 		{

@@ -3,13 +3,14 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>47b3c4b2-23ef-4304-8b4b-feb0d2c1a888</ProjectGuid>
-    <ProjectHome>.</ProjectHome>
+    <ProjectHome>
+    </ProjectHome>
     <StartupFile>PythonDesignPatterns.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>PythonDesignPatterns</Name>
+    <Name>_python</Name>
     <RootNamespace>PythonDesignPatterns</RootNamespace>
     <InterpreterId>Global|PythonCore|3.9</InterpreterId>
   </PropertyGroup>

@@ -8,19 +8,7 @@ namespace DesignPatterns
     {
         static void Main(string[] args)
         {
-            #region Strategy
-
-            Character king = new King();
-            Console.Write("King: ");
-            king.Fight();
-            Character queen = new Queen();
-            Console.Write("Queen: ");
-            queen.Fight();
-            queen.SetWeapon(new SwordBehaviour());
-            Console.Write("Queen: ");
-            queen.Fight();
-
-            #endregion
+            
             
             #region Observable
 
