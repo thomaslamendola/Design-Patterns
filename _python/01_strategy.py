@@ -1,6 +1,4 @@
 from abc import ABC, abstractmethod
-from DuckSimulator.fly_behaviours import FlyNoWay, FlyWithWings
-from DuckSimulator.quack_behaviors import Quack, Squeak
 
 class Duck(ABC):
     def __init__(self):
@@ -41,3 +39,42 @@ class RubberDuck(Duck):
 
     def display(self):
         print("I am a Rubber Duck!")
+
+class FlyBehaviour(ABC):
+    @abstractmethod
+    def fly(self):
+        pass
+
+class FlyWithWings(FlyBehaviour):
+    def fly(self):
+        print("Flying with wings...")
+
+class FlyNoWay(FlyBehaviour):
+    def fly(self):
+        print("Not flying...")
+
+class QuackBehaviour(ABC):
+    @abstractmethod
+    def quack(self):
+        pass
+
+class Quack(QuackBehaviour):
+    def quack(self):
+        print("Quack Quack!")
+
+class Squeak(QuackBehaviour):
+    def quack(self):
+        print("Squeak Squeak!")
+
+
+print("Mallard Duck:")
+duck = MallardDuck()
+duck.swim()
+duck.perform_fly()
+duck.perform_quack()
+
+print("Rubber Duck:")
+duck = RubberDuck()
+duck.swim()
+duck.perform_fly()
+duck.perform_quack()

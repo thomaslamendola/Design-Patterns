@@ -5,13 +5,14 @@
     <ProjectGuid>47b3c4b2-23ef-4304-8b4b-feb0d2c1a888</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>01_strategy.py</StartupFile>
+    <StartupFile>
+    </StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>_python</Name>
-    <RootNamespace>PythonDesignPatterns</RootNamespace>
+    <RootNamespace>_python</RootNamespace>
     <InterpreterId>Global|PythonCore|3.9</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
